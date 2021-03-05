@@ -2,4 +2,4 @@ sudo docker volume create percona
 
 sudo docker container run --rm --name percona -v percona:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=... -e MYSQL_DATABASE=db1 -e MYSQL_USER=... -e MYSQL_PASSWORD=... -d jsurf/rpi-mariadb
 
-sudo docker container run --rm -p 80:80 -v wordpress:/var/www/html --link percona:db --name wordpress -e WORDPRESS_DB_HOST=db -e WORDPRESS_DB_USER=... -e WORDPRESS_DB_PASSWORD=... -e WORDPRESS_DB_NAME=db1 -d wordpress:4.9-php7.2-apache
+sudo docker container run -p 80:80 -v wordpress:/var/www/html --link percona:db --name wordpress -e WORDPRESS_DB_HOST=db -e WORDPRESS_DB_USER=devops -e WORDPRESS_DB_PASSWORD=nemtudom -e WORDPRESS_DB_NAME=db1 -d wordpress:5.6-php7.4-apache
