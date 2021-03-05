@@ -1,1 +1,3 @@
 # rpi-docker-wp
+
+HOW TO RUN DOCKER IMAGE WORDPRESS
